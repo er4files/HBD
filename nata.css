@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     text-align: center;
     padding: 50px;
-    background-color: #000000; /* Latar belakang hitam */
+    background-color: #000000; 
   }
   
   #umur {
@@ -13,9 +13,8 @@ body {
     border: 2px solid darkgrey;
     width: 600px;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.8); /* Latar belakang hitam dengan transparansi */
-    color: #FFD700; /* Warna angka (kuning emas) */
-}
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #FFD700; 
 
 .kotak {
     flex: 1;
@@ -32,18 +31,18 @@ body {
 }
 
 button {
-    margin-top: 20px; /* Jarak antara button dengan elemen di atasnya */
+    margin-top: 20px;
     padding: 10px 20px;
-    background-color: #FFD700; /* Warna kuning emas */
-    color: #000; /* Warna teks hitam */
+    background-color: #FFD700; 
+    color: #000; 
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-weight: bold; /* Membuat teks lebih tebal */
+    font-weight: bold; 
 }
 
 button:hover {
-    background-color: #DAA520; /* Warna kuning emas yang lebih gelap saat dihover */
+    background-color: #DAA520; 
 }
 
 
