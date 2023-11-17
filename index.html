@@ -42,17 +42,17 @@
         // Ganti 'halaman-tujuan.html' dengan nama halaman yang ingin dituju
         window.location.href = 'hbd.html';
     }
-</script>
+  </script>
   <script>
     function hitungUmur() {
-      var tanggalLahir = new Date('2004-11-18T00:00:01Z');
+      var tanggalLahir = new Date('2004-11-16T17:00:01Z'); // Ganti dengan tanggal dan waktu lahir Anda
       var waktuSekarang = new Date();
       var perbedaanWaktu = waktuSekarang - tanggalLahir;
       var umur = new Date(perbedaanWaktu);
 
       document.getElementById('tahun').innerText = umur.getUTCFullYear() - 1970;
       document.getElementById('bulan').innerText = umur.getUTCMonth();
-      document.getElementById('hari').innerText = umur.getUTCDate();
+      document.getElementById('hari').innerText = umur.getUTCDate() - 1; // Kurangi 1 hari karena mulai dari 0
       document.getElementById('jam').innerText = umur.getUTCHours();
       document.getElementById('menit').innerText = umur.getUTCMinutes();
       document.getElementById('detik').innerText = umur.getUTCSeconds();
