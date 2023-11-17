@@ -1,52 +1,67 @@
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
-    padding: 50px;
-    background-color: #000000; 
-  }
-  
-  #umur {
+    padding: 10px;
+    background-color: #000000;
+}
+
+#umur {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     border: 2px solid darkgrey;
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.8); 
-    color: #FFD700; 
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FFD700;
 }
+
 .kotak {
     flex: 1;
     text-align: center;
+    margin: 5px;
 }
 
 .angka {
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .keterangan {
-    font-size: 1.2em;
+    font-size: 1em;
     color: white;
 }
 
 button {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #FFD700; 
-    color: #000; 
+    background-color: #FFD700;
+    color: #000;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #DAA520; 
+    background-color: #DAA520;
 }
 
+@media only screen and (max-width: 600px) {
+    #umur {
+        max-width: 100%;
+        padding: 5px;
+    }
 
-  
+    .angka {
+        font-size: 20px;
+    }
+
+    .keterangan {
+        font-size: 0.8em;
+    }
+}
 .star {
     position: absolute;
     width: 2px;
@@ -65,3 +80,4 @@ button:hover {
         opacity: 0;
     }
 }
+

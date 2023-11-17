@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family+Baloo+Thambi+2:weight@700&display+swab');
+
 body {
     color: #111;
     background-color: #000;
@@ -11,9 +12,11 @@ body {
     font-weight: 700;
     font-size: 5rem;
 }
+
 .container > span {
     animation: glow 2s ease-in-out infinite;
 }
+
 @keyframes glow {
     0%, 100%{
         color: #fff;
@@ -29,12 +32,29 @@ body {
     padding: 10px;
     border-radius: 10px;
     margin-top: 20px;
-    width: 30%;
+    width: 80%; 
     margin: auto;
     display: flex;
-    flex-direction: column; /* Align content vertically */
+    flex-direction: column;
     align-items: center;
 }
+
+.music {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #111;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 3rem;
+    }
+
+    .box {
+        width: 90%; 
+    }
+}
+
 
 .star {
     position: absolute;
@@ -53,13 +73,6 @@ body {
         transform: translateY(110vh);
         opacity: 0;
     }
-}
-
-
-.music {
-    width: 100%;
-    margin-top: 10px;
-    background-color: #111;
 }
 
 .container >span:nth-child(2) {
