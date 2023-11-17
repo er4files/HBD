@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HBD</title>
+  <link rel="stylesheet" href="nata.css">
+  <link href="hbd.jpeg" rel="icon">
+  <link href="hbd.jpeg" rel="apple-touch-icon">
+</head>
+<body>
+  <div id="umur">
+    <div class="kotak">
+      <div class="angka" id="tahun"></div>
+      <div class="keterangan">tahun</div>
+    </div>
+    <div class="kotak">
+      <div class="angka" id="bulan"></div>
+      <div class="keterangan">bulan</div>
+    </div>
+    <div class="kotak">
+      <div class="angka" id="hari"></div>
+      <div class="keterangan">hari</div>
+    </div>
+    <div class="kotak">
+      <div class="angka" id="jam"></div>
+      <div class="keterangan">jam</div>
+    </div>
+    <div class="kotak">
+      <div class="angka" id="menit"></div>
+      <div class="keterangan">menit</div>
+    </div>
+    <div class="kotak">
+      <div class="angka" id="detik"></div>
+      <div class="keterangan">detik</div>
+    </div>
+  </div>
+  <button onclick="redirectToNextPage()" class="btn">NEXT</button>
+  <script src="script.js"></script>
+  <script>
+    function redirectToNextPage() {
+        // Ganti 'halaman-tujuan.html' dengan nama halaman yang ingin dituju
+        window.location.href = 'hbd.html';
+    }
+</script>
+  <script>
+    function hitungUmur() {
+      var tanggalLahir = new Date('2004-11-18T00:00:01Z');
+      var waktuSekarang = new Date();
+      var perbedaanWaktu = waktuSekarang - tanggalLahir;
+      var umur = new Date(perbedaanWaktu);
+
+      document.getElementById('tahun').innerText = umur.getUTCFullYear() - 1970;
+      document.getElementById('bulan').innerText = umur.getUTCMonth();
+      document.getElementById('hari').innerText = umur.getUTCDate();
+      document.getElementById('jam').innerText = umur.getUTCHours();
+      document.getElementById('menit').innerText = umur.getUTCMinutes();
+      document.getElementById('detik').innerText = umur.getUTCSeconds();
+    }
+
+    setInterval(hitungUmur, 1000);
+    hitungUmur();
+  </script>
+</body>
+</html>

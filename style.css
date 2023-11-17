@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family+Baloo+Thambi+2:weight@700&display+swab');
+body {
+    color: #111;
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: 700;
+    font-size: 5rem;
+}
+.container > span {
+    animation: glow 2s ease-in-out infinite;
+}
+@keyframes glow {
+    0%, 100%{
+        color: #fff;
+        text-shadow: 0 0 12px rgb(255, 27, 240), 0 0 50px rgb(255, 27, 240), 0 0 100px rgb(255, 27, 240);
+    }
+    10%, 90%{
+        color: #111;
+        text-shadow: none;
+    }
+}
+
+.box {
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    align-items: center;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    animation: star-fall 2s linear infinite;
+}
+
+@keyframes star-fall {
+    0% {
+        transform: translateY(-10vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(110vh);
+        opacity: 0;
+    }
+}
+
+
+.music {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #111;
+}
+
+.container >span:nth-child(2) {
+    animation-delay: 0s;
+}
+.container >span:nth-child(3) {
+    animation-delay: 0s;
+}
+.container >span:nth-child(4) {
+    animation-delay: 0s;
+}
+.container >span:nth-child(5) {
+    animation-delay: 0.90s;
+}
+.container >span:nth-child(6) {
+    animation-delay: 0.90s;
+}
+.container >span:nth-child(7) {
+    animation-delay: 0.90s;
+}
+.container >span:nth-child(8) {
+    animation-delay: 0.90s;
+}
+.container >span:nth-child(9) {
+    animation-delay: 0.90s;
+}
+.container >span:nth-child(10) {
+    animation-delay: 0.90s;
+}
+.container >span:nth-child(11) {
+    animation-delay: 0.90s;
+}
+.container >span:nth-child(12) {
+    animation-delay: 0.90s;
+}
+.container >span:nth-child(13) {
+    animation-delay: 1.80s;
+}

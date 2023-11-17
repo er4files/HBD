@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: #000000; /* Latar belakang hitam */
+  }
+  
+  #umur {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid darkgrey;
+    width: 600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Latar belakang hitam dengan transparansi */
+    color: #FFD700; /* Warna angka (kuning emas) */
+}
+
+.kotak {
+    flex: 1;
+    text-align: center;
+}
+
+.angka {
+    font-size: 50px;
+}
+
+.keterangan {
+    font-size: 1.2em;
+    color: white;
+}
+
+button {
+    margin-top: 20px; /* Jarak antara button dengan elemen di atasnya */
+    padding: 10px 20px;
+    background-color: #FFD700; /* Warna kuning emas */
+    color: #000; /* Warna teks hitam */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold; /* Membuat teks lebih tebal */
+}
+
+button:hover {
+    background-color: #DAA520; /* Warna kuning emas yang lebih gelap saat dihover */
+}
+
+
+  
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    animation: star-fall 2s linear infinite;
+}
+
+@keyframes star-fall {
+    0% {
+        transform: translateY(-10vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(110vh);
+        opacity: 0;
+    }
+}
